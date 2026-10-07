@@ -51,7 +51,7 @@ def status():
     minutes, seconds = divmod(remainder, 60)
     return jsonify({
         "app": "DevSecOps Dashboard",
-        "version": "2.0.0",
+        "version": "2.1.0",
         "status": "running",
         "python_version": sys.version.split()[0],
         "platform": platform.system(),
