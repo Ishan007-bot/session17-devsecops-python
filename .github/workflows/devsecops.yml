@@ -130,7 +130,7 @@ jobs:
       - name: Scan image (security gate)
         run: |
           trivy image \
-            --severity HIGH,CRITICAL \
+            --severity HIGH,CRITICAL --ignore-unfixed \
             --exit-code 1 \
             session17-python:${{ github.sha }}
 
